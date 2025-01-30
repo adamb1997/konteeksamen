@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisebyrå - Bestill fly og hotell</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/fav.png" type="image/png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "Lorem Ipsum Reisebyrå",
+            "image": "https://www.htmlhotell.no/images/fav.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis eros ut arcu varius, non egestas neque fermentum.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Loremveien 456",
+              "addressLocality": "Lorem City",
+              "postalCode": "5678",
+              "addressCountry": "NO"
+            },
+            "telephone": "+47 111 11 111",
+            "url": "https://www.lorem-ipsum-travel.no",
+            "openingHours": "Mo-Fr 08:00-18:00"
+          }
+    </script>
+</head>
+<body>
+    <header>
+        <section class="top-bar show-mobile">
+            <a href="index.html">
+                <img src="images/fav.png" alt="Reisebyrå Logo" height="48">
+            </a>
+            <a><i class="fa fa-search"></i></a> 
+            <a href="index.html"><i class="fa fa-user"></i></a>
+        </section>
+
+        <section class="hide-mobile">
+            <section class="top-bar">
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-user"></i> Min side</a>
+            </section>
+            <section class="main-header">
+                <a href="index.html">
+                    <img src="images/fav.png" alt="Reisebyrå Logo" height="48">
+                </a>
+                <nav>
+                    <a href="index.html#tips">Gå til Tips og inspirasjon</a>
+                    <a href="hotel.html">Hotell</a>
+                    <a href="https://www.norwegian.no" target="_blank">Fly</a>
+                    <a href="#footer">Kontakt</a>
+                </nav>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="banner">
+        </section>
+        <section class="set-form-bar">
+            <section class="search-section">
+                <section class="tabs">
+                    <button class="tab active"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</button>
+                    <button class="tab"><i class="fa-solid fa-plane"></i> Fly</button>
+                    <button class="tab"><i class="fa-solid fa-city"></i> Storby</button>
+                    <button class="tab"><i class="fa-solid fa-person-snowboarding"></i> Ski</button>
+                    <button class="tab"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</button>
+                </section>
+                <form class="form-section">
+                    <section class="form-group">
+                        <label for="from">Fra</label>
+                        <select id="from">
+                            <option>Oslo Lufthavn</option>
+                            <option>Bergen</option>
+                            <option>Stavanger</option>
+                        </select>
+                    </section>
+                    <section class="form-group">
+                        <label for="to">Til</label>
+                        <select id="to">
+                            <option>Albania</option>
+                            <option>Frankrike</option>
+                            <option>Italia</option>
+                        </select>
+                    </section>
+                    <section class="form-group">
+                        <label for="duration">Reiselengde</label>
+                        <select id="duration">
+                            <option>1 uke</option>
+                            <option>2 uker</option>
+                        </select>
+                    </section>
+                    <section class="form-group">
+                        <label for="date">Velg dato</label>
+                        <input type="date" id="date">
+                    </section>
+                    <section class="form-group">
+                        <label for="passengers">Antall reisende</label>
+                        <input type="number" id="passengers" min="1" value="2">
+                    </section>
+                    <button class="search-btn">Søk</button>
+                </form>
+            </section>
+        </section>
+        <section class="promotion-section">
+            <article class="promo-content">
+                <h2>Bestill sommerens beste uke</h2>
+                <p>Fly + hotell, 7 dager</p>
+                <strong>Fra 3,298,-</strong>
+            </article>
+            <a href="order.html" class="promo-button">Bestill i dag</a>
+        </section>
+        <section>
+            <section id="offer-slider">
+                <article class="set-slide">
+                    <article class="set-content">
+                        <h3 class="set-main-title">Lorem ipsum dolor sit amet.</h3>
+                        <a href="#" class="set-color-link">Lorem ipsum <i class="fa-solid fa-angles-right"></i></a>
+                    </article>
+                </article>
+                <article class="set-slide">
+                    <article class="set-content">
+                        <h3 class="set-main-title">Lorem ipsum dolor sit amet.</h3>
+                        <a href="#" class="set-color-link">Lorem ipsum <i class="fa-solid fa-angles-right"></i></a>
+                    </article>
+                </article>
+                <article class="set-slide">
+                    <article class="set-content">
+                        <h3 class="set-main-title">Lorem ipsum dolor sit amet.</h3>
+                        <a href="#" class="set-color-link">Lorem ipsum <i class="fa-solid fa-angles-right"></i></a>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <section id="tips">
+            <h2>Tips og inspirasjon</h2>
+            <section class="tips-container">
+                <article class="main-tip-card">
+                    <article class="set-relative">
+                        <img src="./images/beach1.png" alt="Ipsum - Lorem ipsum dolor sit amet">
+                        <article class="overlay-tag">
+                            <span>Lorem Ipsum</span>
+                        </article>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <a href="hotel.html" class="set-btn-anchor">Fra 3,770 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="main-tip-card">
+                    <article class="set-relative">
+                        <img src="./images/beach2.png" alt="Ipsum - Lorem ipsum dolor sit amet">
+                        <article class="overlay-tag">
+                            <span>Lorem Ipsum</span>
+                        </article>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <a href="hotel.html" class="set-btn-anchor">Fra 3,770 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="main-tip-card">
+                    <article class="set-relative">
+                        <img src="./images/cathedral.png" alt="Ipsum - Lorem ipsum dolor sit amet">
+                        <article class="overlay-tag">
+                            <span>Lorem Ipsum</span>
+                        </article>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <a href="hotel.html" class="set-btn-anchor">Fra 3,770 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="main-tip-card">
+                    <article class="set-relative">
+                        <img src="./images/building.png" alt="Ipsum - Lorem ipsum dolor sit amet">
+                        <article class="overlay-tag">
+                            <span>Lorem Ipsum</span>
+                        </article>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <a href="hotel.html" class="set-btn-anchor">Fra 3,770 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="main-tip-card">
+                    <article class="set-relative">
+                        <img src="./images/ski-slope.png" alt="Ipsum - Lorem ipsum dolor sit amet">
+                        <article class="overlay-tag">
+                            <span>Lorem Ipsum</span>
+                        </article>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <a href="hotel.html" class="set-btn-anchor">Fra 3,770 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="main-tip-card">
+                    <article class="set-relative">
+                        <img src="./images/beach3.png" alt="Ipsum - Lorem ipsum dolor sit amet">
+                        <article class="overlay-tag">
+                            <span>Lorem Ipsum</span>
+                        </article>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <a href="hotel.html" class="set-btn-anchor">Fra 3,770 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section class="set-flags-all">
+            <span><img src="./images/flags/sverige.png" alt="Sverige Flag" style="height: 32px;"> Sverige</span>
+            <span><img src="./images/flags/danmark.png" alt="Danmark Flag" style="height: 32px;"> Danmark</span>
+            <span><img src="./images/flags/norge.png" alt="Norge Flag" style="height: 32px;"> Norge</span>
+            <span><img src="./images/flags/finland.png" alt="Finland Flag" style="height: 32px;"> Finland</span>
+            <span><img src="./images/flags/nederland.png" alt="Nederland Flag" style="height: 32px;"> Nederland</span>
+        </section>
+        
+        <nav class="set-flex-main">
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>BETALINGSMETODER</strong></li>
+                    <li>
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="fab fa-apple-pay"></i></a>
+                        <a href="#"><i class="fab fa-google-pay"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>NYHETER & TILBUD</strong></li>
+                    <li>
+                        <form>
+                            <span class="form-section">
+                                <span class="form-group">
+                                    <input type="text" placeholder="eksempel@mail.com">
+                                </span>
+                                <button class="search-btn">Send</button>
+                            </span>
+                        </form>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>KUNDESERVICE</strong></li>
+                    <li><a href="#">Q & A</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1X6ciUJu-WCZRGnIpKJG4Kd5iHPVhNbdnUo_upJmUFiM/edit?usp=sharing" target="_blank">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>SOSIALE MEDIER</strong></li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisebyrå - Bestill fly og hotell</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/fav.png" type="image/png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "Lorem Ipsum Reisebyrå",
+            "image": "https://www.htmlhotell.no/images/fav.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis eros ut arcu varius, non egestas neque fermentum.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Loremveien 456",
+              "addressLocality": "Lorem City",
+              "postalCode": "5678",
+              "addressCountry": "NO"
+            },
+            "telephone": "+47 111 11 111",
+            "url": "https://www.lorem-ipsum-travel.no",
+            "openingHours": "Mo-Fr 08:00-18:00"
+          }
+    </script>
+</head>
+<body>
+    <header>
+        <section class="top-bar show-mobile">
+            <a href="index.html">
+                <img src="images/fav.png" alt="Reisebyrå Logo" height="48">
+            </a>
+            <a><i class="fa fa-search"></i></a> 
+            <a href="index.html"><i class="fa fa-user"></i></a>
+        </section>
+
+        <section class="hide-mobile">
+            <section class="top-bar">
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-user"></i> Min side</a>
+            </section>
+            <section class="main-header">
+                <a href="index.html">
+                    <img src="images/fav.png" alt="Reisebyrå Logo" height="48">
+                </a>
+                <nav>
+                    <a href="index.html#tips">Gå til Tips og inspirasjon</a>
+                    <a href="hotel.html">Hotell</a>
+                    <a href="https://www.norwegian.no" target="_blank">Fly</a>
+                    <a href="#footer">Kontakt</a>
+                </nav>
+            </section>
+        </section>
+    </header>
+
+    <main id="order-page">
+        <section class="tabs">
+            <nav>
+                <a href="index.html" class="tab">Søk</a>
+                <a href="hotel.html" class="tab">Søkresultater</a>
+                <a href="hotel.html#rooms" class="tab">Romtype</a>
+                <a href="https://www.norwegian.no/" target="_blank" class="tab">Fly</a>
+                <a href="#" class="tab">Tilegg</a>
+                <a href="#" class="tab active">Opplysningner</a>
+                <a href="#" class="tab">Bestill</a>
+            </nav>
+        </section>
+
+        <section class="order-section">
+            <section class="form-section">
+                <form>
+                    <fieldset class="fieldset">
+                        <legend>Voksen 18+ Hovedbestiller</legend>
+                        <section class="form-row">
+                            <label for="first-name">Fornavn (Påkrevd):</label>
+                            <input type="text" id="first-name" name="first-name" required minlength="2" maxlength="50">
+                        </section>
+                        <section class="form-row">
+                            <label for="last-name">Etternavn (Påkrevd):</label>
+                            <input type="text" id="last-name" name="last-name" required minlength="2" maxlength="50">
+                        </section>
+                        <section class="form-row">
+                            <label for="birth-date">Fødselsdato:</label>
+                            <input type="date" id="birth-date" name="birth-date" required>
+                        </section>
+                        <section class="form-row">
+                            <label for="email">E-postadresse:</label>
+                            <input type="email" id="email" name="email" required>
+                        </section>
+                        <section class="form-row">
+                            <label for="phone">Telefonnummer:</label>
+                            <input type="tel" id="phone" name="phone" required pattern="^\+?\d{10,15}$">
+                        </section>
+                        <section class="form-row">
+                            <label for="address">Gateadresse:</label>
+                            <input type="text" id="address" name="address" required minlength="5">
+                        </section>
+                        <section class="form-row">
+                            <label for="postal-code">Postnummer:</label>
+                            <input type="text" id="postal-code" name="postal-code" required pattern="^\d{4,6}$">
+                        </section>
+                        <section class="form-row">
+                            <label for="country">Land:</label>
+                            <select id="country" name="country" required>
+                                <option value="">Velg et land</option>
+                                <option value="norway">Norge</option>
+                                <option value="sweden">Sverige</option>
+                                <option value="denmark">Danmark</option>
+                            </select>
+                        </section>
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend>Voksen 18+</legend>
+                        <section class="form-row">
+                            <label for="second-first-name">Fornavn (Påkrevd):</label>
+                            <input type="text" id="second-first-name" name="second-first-name" required minlength="2" maxlength="50">
+                        </section>
+                        <section class="form-row">
+                            <label for="second-last-name">Etternavn (Påkrevd):</label>
+                            <input type="text" id="second-last-name" name="second-last-name" required minlength="2" maxlength="50">
+                        </section>
+                        <section class="form-row">
+                            <label for="second-birth-date">Fødselsdato:</label>
+                            <input type="date" id="second-birth-date" name="second-birth-date" required>
+                        </section>
+                    </fieldset>
+
+                    <button class="search-btn">Submit</button>
+                </form>
+            </section>
+
+            <section class="overview-section">
+                <details class="trip-overview-card">
+                    <summary>
+                        <img src="images/beach3.png" alt="Ipsum - Lorem ipsum dolor sit amet" style="width: 300px; height: 200px;">
+                        <h3>Strandferie i Hellas</h3>
+                    </summary>
+                    <div class="trip-details">
+                        <div class="rating">
+                            <i class="fas fa-sun checked-star"></i>
+                            <i class="fas fa-sun checked-star"></i>
+                            <i class="fas fa-sun checked-star"></i>
+                            <i class="fas fa-sun checked-star"></i>
+                            <i class="fas fa-sun checked-star"></i>
+                    </div>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Hellas, Parga</li>
+                            <li><i class="fas fa-calendar-alt"></i> Man 5 mai - man 12 mai 2025</li>
+                            <li><i class="fas fa-plane-departure"></i> Oslo Lufthavn — Preveza</li>
+                        </ul>
+                        <p><strong>19,803,-</strong></p>
+                    </div>
+                </details>
+            </section>
+            
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section class="set-flags-all">
+            <span><img src="./images/flags/sverige.png" alt="Sverige Flag" style="height: 32px;"> Sverige</span>
+            <span><img src="./images/flags/danmark.png" alt="Danmark Flag" style="height: 32px;"> Danmark</span>
+            <span><img src="./images/flags/norge.png" alt="Norge Flag" style="height: 32px;"> Norge</span>
+            <span><img src="./images/flags/finland.png" alt="Finland Flag" style="height: 32px;"> Finland</span>
+            <span><img src="./images/flags/nederland.png" alt="Nederland Flag" style="height: 32px;"> Nederland</span>
+        </section>
+        
+        <nav class="set-flex-main">
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>BETALINGSMETODER</strong></li>
+                    <li>
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="fab fa-apple-pay"></i></a>
+                        <a href="#"><i class="fab fa-google-pay"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>NYHETER & TILBUD</strong></li>
+                    <li>
+                        <form>
+                            <span class="form-section">
+                                <span class="form-group">
+                                    <input type="text" placeholder="eksempel@mail.com">
+                                </span>
+                                <button class="search-btn">Send</button>
+                            </span>
+                        </form>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>KUNDESERVICE</strong></li>
+                    <li><a href="#">Q & A</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1X6ciUJu-WCZRGnIpKJG4Kd5iHPVhNbdnUo_upJmUFiM/edit?usp=sharing" target="_blank">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul class="set-ftr-list-ul">
+                    <li><strong>SOSIALE MEDIER</strong></li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </footer>
+</body>
+</html>
