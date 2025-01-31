@@ -797,3 +797,9 @@ footer, footer a, footer strong, footer span, footer li, footer i {
         display: none;
     }
 }
+
+@media (min-width: 769px) 
+{ .slider-wrapper { 
+    display: none; 
+} 
+}
